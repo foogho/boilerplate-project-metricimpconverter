@@ -6,6 +6,11 @@ const server = require('../server');
 chai.use(chaiHttp);
 
 suite('Functional Tests', function () {
+  let requester;
+  suiteSetup(() => {
+    requester = chai.request(server).keepOpen();
+  });
+
   suiteTeardown(() => {
     requester.close();
   });
