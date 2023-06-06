@@ -1,6 +1,6 @@
 const chai = require('chai');
 let assert = chai.assert;
-const ConvertHandler = require('../controllers/convertHandler.js');
+const { ConvertHandler } = require('../controllers/convertHandler.js');
 
 suite('Convert Handler', function () {
   let convertHandler = new ConvertHandler();
