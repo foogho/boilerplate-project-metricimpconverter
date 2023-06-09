@@ -2,7 +2,7 @@ const chai = require('chai');
 let assert = chai.assert;
 const { ConvertHandler } = require('../controllers/convertHandler.js');
 
-suite('Convert Handler', function () {
+suite('Unit Tests', function () {
   let convertHandler = new ConvertHandler();
   test('should correctly read a whole number input', () => {
     const result = convertHandler.convert('5', 'l');
