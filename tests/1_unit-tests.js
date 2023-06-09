@@ -15,6 +15,7 @@ suite('Convert Handler', function () {
   test('should correctly read a fractional input', () => {
     const result = convertHandler.convert('10/5', 'l');
     assert.strictEqual(result.initNum, 2);
+    assert.strictEqual(result.returnNum, 0.52834);
   });
   test('should correctly read a fractional input with a decimal', () => {
     const result = convertHandler.convert('10.5/2', 'l');

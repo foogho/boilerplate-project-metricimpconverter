@@ -59,7 +59,7 @@ function ConvertHandler() {
       throw new ConvertError('invalid unit');
     } else {
       const initUnit = this.parseUnit(initUnitSymbol);
-      const returnNum = +(initNum * initUnit.ratio).toFixed(5);
+      const returnNum = +(this.parseNum(initNum) * initUnit.ratio).toFixed(5);
       const returnUnit = UNITS.find(
         (unit) => unit.name === initUnit.counterpart
       );
