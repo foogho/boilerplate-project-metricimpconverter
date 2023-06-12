@@ -11,10 +11,6 @@ suite('Functional Tests', function () {
     requester = chai.request(server).keepOpen();
   });
 
-  suiteTeardown(() => {
-    requester.close();
-  });
-
   test('Convert a valid input such as 10L: GET request to /api/convert', (done) => {
     requester
       .get('/api/convert')
