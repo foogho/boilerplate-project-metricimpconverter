@@ -1,3 +1,14 @@
 # Metric-Imperial Converter
 
-This is the boilerplate for the Metric-Imperial Converter project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/metric-imperial-converter
+convert metric units to imperial units and vice versa.
+
+## Reference
+
+boilerplate code forked from this [repo](https://github.com/freeCodeCamp/boilerplate-project-metricimpconverter/)
+
+## Installation
+
+1. clone this repo
+2. run `npm install`
+3. run `npm start`
+4. navigate to `http://localhost:3000`
